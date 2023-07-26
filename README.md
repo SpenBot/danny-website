@@ -1,6 +1,6 @@
 # danny-website
 
-
+https://www.blucrabhouse.com/menu#menu=dine-in-dinner
 
 ## NOTES
 
@@ -62,6 +62,20 @@
 
 ```
 
+
+## MVP-1
+
+- [-] Graphic
+- [-] Google Maps
+- [-] Menu Items
+- [-] About Section
+
+## MVP-2
+
+- [-] Image Carosels and Stuff
+
+- I can put in fancier stuff like pop-windows, image-gallery type stuff.
+- I'm like 6 hours in for now
 
 
 ## TODO

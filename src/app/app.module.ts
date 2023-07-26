@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { OrderComponent } from './order/order.component';
 
 import { CardModule } from 'primeng/card';
+import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CardModule } from 'primeng/card';
     BrowserModule,
     AppRoutingModule,
 
-    CardModule
+    CardModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
