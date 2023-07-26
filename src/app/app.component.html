@@ -1,10 +1,15 @@
-<!-- ////// NAVBAR ////// -->
-<app-navbar></app-navbar>
+<div>
 
-<!-- ////// ROUTER ////// -->
-<div class="mb-5" style="min-height: 100vh; padding-top: 60px;">
-  <router-outlet></router-outlet>
+  <!-- ////// NAVBAR ////// -->
+  <app-navbar></app-navbar>
+
+  <!-- ////// ROUTER ////// -->
+  <!-- <div class="mb-5" style="min-height: 100vh; padding-top: 60px;"> -->
+  <div class="mb-5" style="min-height: 100vh;">
+    <router-outlet></router-outlet>
+  </div>
+
+  <!-- ////// FOOTER ////// -->
+  <app-footer class="align-self-end"></app-footer>
+
 </div>
-
-<!-- ////// FOOTER ////// -->
-<app-footer class="align-self-end"></app-footer>

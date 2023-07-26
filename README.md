@@ -22,6 +22,12 @@
 - Adding Outline to Text Using CSS
     - https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/
 
+- Images are not loading after deploying angular app on github pages - Stack Overflow
+    - https://stackoverflow.com/questions/56379595/images-are-not-loading-after-deploying-angular-app-on-github-pages
+
+- 5 Ways to Crop Images in HTML/CSS | Cloudinary
+    - https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css
+
 ## SAMPLES
 
 - https://github.com/SpenBot/angular-project-starter-2023
@@ -68,6 +74,8 @@
     - [-] collapse items
     - [-] should I jsut use bootstrap?
     - [-] user icon
+    - [-] hyperlinks should be on the left side
+    - [-] sticky
 
 - need to figure out bootstrap color overrides
 - user icon in navbar

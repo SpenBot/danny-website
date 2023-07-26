@@ -1,66 +1,70 @@
-<nav class="sticky navbar navbar-color navbar-expand-lg navbar-dark" style="background-color: #20447d">
+<div>
 
-    <!-- ////// BRAND ////// -->
-    <a class="navbar-brand" routerLink="/">Navbar</a>
+    <nav class="navbar navbar-color navbar-expand-lg navbar-dark" style="background-color: #102e5e">
 
-    <!-- ////// HAMBURGER ////// -->
-    <button class="navbar-toggler" style="border: 2px solid white;" (click)="navToggle = !navToggle;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon font-weight-bolder text-white"></span>
-    </button>
+        <!-- ////// BRAND ////// -->
+        <a class="navbar-brand font-weight-bolder" routerLink="/">BSRB</a>
+
+        <!-- ////// HAMBURGER ////// -->
+        <button class="navbar-toggler" style="border: 2px solid white;" (click)="navToggle = !navToggle;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon font-weight-bolder text-white"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse ml-5" id="navbarNav">
+            <!-- ////// NAV ITEMS ////// -->
+            <ul class="navbar-nav font-weight-bold">
+                <li class="nav-item">
+                    <a class="nav-link ml-4" [class.active]="isLinkActive('/')" [routerLink]="'/'">Home</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link ml-4" [routerLinkActive]="['active']" [routerLink]="'/menu'">Menu</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link ml-4" [routerLinkActive]="['active']" [routerLink]="'/order'">Order</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link ml-4" [routerLinkActive]="['active']" [routerLink]="'/about'">About</a>
+                </li>
+            </ul>
+
+            <!-- ////// USER ICON ////// -->
+            <!-- <span class="navbar-text" style="border: solid 1px white; border-radius: 20px; padding: 8px;">
+                <i class="pi pi-user text-white" style="font-size: 1.2rem;"></i>
+            </span> -->
+        </div>
+
+    </nav>
+
+
     
-    <div class="collapse navbar-collapse ml-5" id="navbarNav">
-        <!-- ////// NAV ITEMS ////// -->
-        <ul class="navbar-nav font-weight-bold">
-            <li class="nav-item">
-                <a class="nav-link ml-4" [class.active]="isLinkActive('/')" [routerLink]="'/'">Home</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link ml-4" [routerLinkActive]="['active']" [routerLink]="'/menu'">Menu</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link ml-4" [routerLinkActive]="['active']" [routerLink]="'/order'">Order</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link ml-4" [routerLinkActive]="['active']" [routerLink]="'/about'">About</a>
-            </li>
-        </ul>
+    <!-- ////// COLLAPSE ITEMS ////// -->
+    <nav *ngIf="navToggle" class="navbar navbar-color navbar-expand-lg navbar-dark" style="background-color: #102e5e">
 
-        <!-- ////// USER ICON ////// -->
-        <!-- <span class="navbar-text" style="border: solid 1px white; border-radius: 20px; padding: 8px;">
-            <i class="pi pi-user text-white" style="font-size: 1.2rem;"></i>
-        </span> -->
-    </div>
+        <div id="navbarNavCollapse" style="width: 100%">
+            <ul class="navbar-nav font-weight-bold text-align-center">
 
-  </nav>
+                <li>
+                    <a class="nav-link nav-collapse-link" [class.active]="isLinkActive('/')" [routerLink]="'/'">Home</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link nav-collapse-link" [routerLinkActive]="['active']" [routerLink]="'/menu'">Menu</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link nav-collapse-link" [routerLinkActive]="['active']" [routerLink]="'/order'">Order</a>
+                </li>
+                
+                <li>
+                    <a class="nav-link nav-collapse-link" [routerLinkActive]="['active']" [routerLink]="'/about'">About</a>
+                </li>
 
+            </ul>
+        </div>
 
-  
-<!-- ////// COLLAPSE ITEMS ////// -->
-<nav *ngIf="navToggle" class="navbar navbar-color navbar-expand-lg navbar-dark" style="background-color: #20447d">
+    </nav>
 
-    <div id="navbarNavCollapse" style="width: 100%">
-        <ul class="navbar-nav font-weight-bold text-align-center">
-
-            <li>
-                <a class="nav-link nav-collapse-link" [class.active]="isLinkActive('/')" [routerLink]="'/'">Home</a>
-            </li>
-            
-            <li>
-                <a class="nav-link nav-collapse-link" [routerLinkActive]="['active']" [routerLink]="'/menu'">Menu</a>
-            </li>
-            
-            <li>
-                <a class="nav-link nav-collapse-link" [routerLinkActive]="['active']" [routerLink]="'/order'">Order</a>
-            </li>
-            
-            <li>
-                <a class="nav-link nav-collapse-link" [routerLinkActive]="['active']" [routerLink]="'/about'">About</a>
-            </li>
-
-        </ul>
-    </div>
-
-</nav>
+</div>

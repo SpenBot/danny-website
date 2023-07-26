@@ -1,16 +1,59 @@
+<div>
 
-<!-- <div class="container" width="100%">
-    <img src="/assets/images/danny-1.png" alt="Crab Image 1" width="100%">
-    <div class="centered">Buckets Seafood and Raw Bar</div>
-</div> -->
+    <!-- <img src="assets/images/danny-1.png" alt="Crab Image 1" width="100%" height="500px" style="object-fit: cover;"> -->
+    <img src="assets/images/danny-1.png" alt="Crab Image 1" width="100%">
 
-<img src="/assets/images/danny-1.png" alt="Crab Image 1" width="100%">
-
-<div class="m-5" >
-    <div class="d-flex justify-content-center">
-        <p-card header="Home" [style]="{'width': '45rem'}">
+    <div class="m-5">
+        <!-- <p-card header="Home" [style]="{'text-align': 'center', 'width': '80%', 'margin': '0 auto'}">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
                 quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-        </p-card>
+        </p-card> -->
+        <p style="color: #20447d; font-size: 36px; text-align: center;">Welcome to Buckets Seafood and Raw Bar</p>
+        <p class="mx-auto" [style]="'text-align: center; ' + (!isMobile ? 'width: 40%;' : 'width: 100%;')">The best authentic family style seafood in the Baltimore area made with only the most fresh ingredients.</p>
+    
+        <div style="text-align: center;" class="mx-auto mt-5 text-center">
+            <button [routerLink]="'/order'" type="button" style="text-align: center; background-color: #20447d;" class="btn btn-primary btn-lg">Order Now</button>
+        </div>
     </div>
+
+    <img class="mt-5" src="assets/images/danny-7.png" alt="Crab Image 7" width="100%">
+
+    <!-- ////// LOCATION ////// -->
+    <div class="my-5 mx-auto" style="width: 60%;">
+        <p style="color: #20447d; font-size: 36px; text-align: center;">Location</p>
+
+        <!-- ////// DESKTOP ////// -->
+        <div *ngIf="!isMobile" class="d-flex justify-content-between">
+            <div width="40%">
+                <p style="text-align: center; color: #20447d; font-size: 22px;">Baltimore</p>
+                <p class="mb-0" style="text-align: center;">555 Fake St</p>
+                <p style="text-align: center;">Baltimore, MD 21201</p>
+                <p style="text-align: center; color: #20447d;">(555) 555-555</p>
+            </div>
+            <div width="40%">
+                <p style="text-align: center; color: #20447d; font-size: 22px;">Hours</p>
+                <p class="mb-0" style="text-align: center;"><span class="font-weight-bold">Monday - Thursday:</span> 3:00 pm - 9:30 pm</p>
+                <p class="mb-0" style="text-align: center;"><span class="font-weight-bold">Friday - Saturday:</span> 3:00 pm - 10:00 pm</p>
+                <p class="mb-0" style="text-align: center;"><span class="font-weight-bold">Sunday:</span> 3:00 pm - 9:30 pm/p>
+            </div>
+        </div>
+
+        <!-- ////// MOBILE ////// -->
+        <div *ngIf="isMobile" class="mb-5">
+            <div>
+                <p style="text-align: center; color: #20447d; font-size: 22px;">Baltimore</p>
+                <p class="mb-0" style="text-align: center;">555 Fake St</p>
+                <p style="text-align: center;">Baltimore, MD 21201</p>
+                <p style="text-align: center; color: #20447d;">(555) 555-555</p>
+            </div>
+            <div class="mt-4 mb-5">
+                <p style="text-align: center; color: #20447d; font-size: 22px;">Hours</p>
+                <p class="mb-0" style="text-align: center;"><span class="font-weight-bold">Monday - Thursday:</span> 3:00 pm - 9:30 pm</p>
+                <p class="mb-0" style="text-align: center;"><span class="font-weight-bold">Friday - Saturday:</span> 3:00 pm - 10:00 pm</p>
+                <p class="mb-0" style="text-align: center;"><span class="font-weight-bold">Sunday:</span> 3:00 pm - 9:30 pm/p>
+            </div>
+        </div>
+    </div>
+
+
 </div>
