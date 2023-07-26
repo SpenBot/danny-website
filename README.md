@@ -12,6 +12,15 @@
 
 - had to change the `npm run build` command
 
+## RESOURCES
+
+- https://www.npmjs.com/package/ngx-device-detector
+
+- Used gThumb on Linux to edit screenshots
+    - ratio is 2:39:1 for cropping
+
+- Adding Outline to Text Using CSS
+    - https://www.codesdope.com/blog/article/adding-outline-to-text-using-css/
 
 ## SAMPLES
 
@@ -41,6 +50,10 @@
 
     # update version in package.jspn
     # update npm commands if you want in package.json
+
+
+    $ npm i ngx-device-detector --force --save
+
 ```
 
 
@@ -54,6 +67,7 @@
     - [-] hamburger styling and feature
     - [-] collapse items
     - [-] should I jsut use bootstrap?
+    - [-] user icon
 
 - need to figure out bootstrap color overrides
 - user icon in navbar
@@ -66,6 +80,10 @@
 
 - [-] Deploying for Angular to github pages
     - [-] whats the HREF situation?
+
+- [-] HONESTLY ... ITS PROBABLY EASIER JUST TO BUILD YOUR OWN NAVBAR
+- [-] THERES GOTTA BE A BETTER WAY TO DO MOBILE STYLING THAN THIS SHIT
+    - [-] LIKE THE FOOTER
 
 ## BUGS
 

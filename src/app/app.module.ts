@@ -11,7 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { OrderComponent } from './order/order.component';
 
-// import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { OrderComponent } from './order/order.component';
     BrowserModule,
     AppRoutingModule,
 
-    // ButtonModule
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
