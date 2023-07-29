@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /danny-website/",
+    "build": "ng build --configuration production --aot --base-href=https://spenbot.github.io/danny-website/ --output-hashing=all && ./create_404.sh",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "npm run build && gh-pages -d dist/danny-website"

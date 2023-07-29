@@ -1,0 +1,1 @@
+cp ./dist/danny-website/index.html ./dist/danny-website/404.html

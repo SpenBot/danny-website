@@ -20,12 +20,12 @@ export class MenuComponent implements OnInit {
     {
       label: 'Salmon',
       img: 'assets/images/danny-10.png',
-      desc: 'Salmon with a potato and brocolli.'
+      desc: 'Salmon with a potato and brocolli with tartar sauce.'
     },
     {
       label: 'Calamari',
       img: 'assets/images/danny-10.png',
-      desc: 'Fresh calamari made to order.'
+      desc: 'Fresh calamari made to order just for you.'
     },
   ];
 
@@ -33,7 +33,7 @@ export class MenuComponent implements OnInit {
     {
       label: 'Crab Bucket',
       img: 'assets/images/danny-10.png',
-      desc: 'Bucket of steamed crabs with home made butter sauce'
+      desc: 'Bucket of steamed crabs with home made butter sauce.'
     },
     {
       label: 'Large Crab Bucket',

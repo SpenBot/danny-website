@@ -76,6 +76,11 @@ https://www.blucrabhouse.com/menu#menu=dine-in-dinner
 - [x] text on images
 
 - [-] router bug
+- [x] have to clear cache everytime?
+
+- [-] menu items wrap is weird
+
+- [-] favicon
 
 ## MVP-2
 
@@ -124,3 +129,37 @@ https://www.blucrabhouse.com/menu#menu=dine-in-dinner
 
 - [x] Home link stays highlighted
 - [x] Footer styling is messed up on mobile
+
+
+## ROUTING BUG
+
+routes - Angular routing shows only 404 Not found - Stack Overflow
+https://stackoverflow.com/questions/69015222/angular-routing-shows-only-404-not-found
+
+Angular : Get `404` after reload with `GitHub` page - Stack Overflow
+https://stackoverflow.com/questions/63862046/angular-get-404-after-reload-with-github-page
+
+angular - ng build --prod => Error: Unknown argument: prod - Stack Overflow
+https://stackoverflow.com/questions/73156911/ng-build-prod-error-unknown-argument-prod
+
+Fix 404 Errors from Angular Projects Hosted on Github Pages | Sherman Digital
+https://shermandigital.com/blog/fix-404-errors-from-angular-projects-hosted-on-github-pages/
+
+angular2 routing - Angular 2: 404 error occur when I refresh through the browser - Stack Overflow
+https://stackoverflow.com/questions/35284988/angular-2-404-error-occur-when-i-refresh-through-the-browser
+
+deployment - 404 when Deploying Angular 6 app to github pages - Stack Overflow
+https://stackoverflow.com/questions/54408517/404-when-deploying-angular-6-app-to-github-pages
+
+## SCROLL BUG
+
+https://stackoverflow.com/questions/55414077/angular-unable-to-use-scrollpositionrestoration???
+
+## BASH FILESIN PACKAGE.JSON
+
+https://stackoverflow.com/questions/34937724/running-bash-scripts-with-npm
+https://awsm.page/nodejs/run-shell-scripts-using-npm-script/
+
+```sh
+    chmod +x ./create_404.sh
+```
