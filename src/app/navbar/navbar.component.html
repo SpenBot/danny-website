@@ -3,7 +3,9 @@
     <nav class="navbar navbar-color navbar-expand-lg navbar-dark" style="background-color: #102e5e">
 
         <!-- ////// BRAND ////// -->
-        <a class="navbar-brand font-weight-bolder" routerLink="/">BSRB</a>
+        <!-- <a class="navbar-brand font-weight-bolder" routerLink="/">BSRB</a> -->
+        <img *ngIf="!isMobile" src="assets/images/danny-graphic-1.png" alt="Crab Image 1" height="100px"  routerLink="/">
+        <img *ngIf="isMobile" src="assets/images/danny-graphic-1.png" alt="Crab Image 1" height="50px"  routerLink="/">
 
         <!-- ////// HAMBURGER ////// -->
         <button class="navbar-toggler" style="border: 2px solid white;" (click)="navToggle = !navToggle;" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -13,6 +13,7 @@ import { OrderComponent } from './order/order.component';
 
 import { CardModule } from 'primeng/card';
 import { TabViewModule } from 'primeng/tabview';
+import { MenuItemComponent } from './menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TabViewModule } from 'primeng/tabview';
     FooterComponent,
     MenuComponent,
     AboutComponent,
-    OrderComponent
+    OrderComponent,
+    MenuItemComponent
   ],
   imports: [
     BrowserModule,

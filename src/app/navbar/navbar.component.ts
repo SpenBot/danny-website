@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { AppService } from '../app.service';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,11 +10,13 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  navToggle = false;
+  public isMobile = false;
+  public navToggle = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private appService: AppService) { }
 
   ngOnInit(): void {
+    this.isMobile = this.appService.isMobile;
   }
 
   isLinkActive(url: string): boolean {

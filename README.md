@@ -1,5 +1,7 @@
 # danny-website
 
+## EXAMPLE
+
 https://www.blucrabhouse.com/menu#menu=dine-in-dinner
 
 ## NOTES
@@ -65,17 +67,28 @@ https://www.blucrabhouse.com/menu#menu=dine-in-dinner
 
 ## MVP-1
 
-- [-] Graphic
+- [x] Graphic
 - [-] Google Maps
-- [-] Menu Items
-- [-] About Section
+- [x] Menu Items
+- [x] About Section
+
+- [x] images too big on desktop
+- [x] text on images
+
+- [-] router bug
 
 ## MVP-2
 
 - [-] Image Carosels and Stuff
+- [-] Calander
 
-- I can put in fancier stuff like pop-windows, image-gallery type stuff.
+- I can put in fancier stuff like pop-windows, image-gallery type stuff, maybe like a calander or something.
 - I'm like 6 hours in for now
+
+## MVP-3
+
+- [-] Pop-Up Modals
+- [-] Ordering Funcitonality
 
 
 ## TODO
@@ -110,4 +123,4 @@ https://www.blucrabhouse.com/menu#menu=dine-in-dinner
 ## BUGS
 
 - [x] Home link stays highlighted
-- [-] Footer styling is messed up on modal
+- [x] Footer styling is messed up on mobile

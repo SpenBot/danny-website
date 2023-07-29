@@ -1,9 +1,14 @@
 <div>
 
-    <!-- ////// IMAGE-1 ////// -->
-    <img src="assets/images/danny-1.png" alt="Crab Image 1" width="100%">
+    <!-- /////////////////// IMAGE-1 /////////////////// -->
+    
+    <!-- // DESKTOP // -->
+    <img *ngIf="!isMobile" src="assets/images/danny-1-text.png" alt="Crab Image 1" width="100%" height="500px" style="object-fit: cover;">
+    
+    <!-- // MOBILE // -->
+    <img *ngIf="isMobile" src="assets/images/danny-1-text.png" alt="Crab Image 1" width="100%">
 
-    <!-- ////// WELCOME ////// -->
+    <!-- /////////////////// WELCOME /////////////////// -->
     <div class="m-5">
         <p style="color: #20447d; font-size: 36px; text-align: center;">Welcome to Buckets Seafood and Raw Bar</p>
         <p class="mx-auto" [style]="'text-align: center; ' + (!isMobile ? 'width: 40%;' : 'width: 100%;')">The best authentic family style seafood in the Baltimore area made with only the most fresh ingredients.</p>
@@ -13,14 +18,20 @@
         </div>
     </div>
 
-    <!-- ////// IMAGE-2 ////// -->
-    <img class="mt-5" src="assets/images/danny-7.png" alt="Crab Image 7" width="100%">
+    <!-- /////////////////// IMAGE-2 ////////////////// -->
+    
+    <!-- // DESKTOP // -->
+    <img *ngIf="!isMobile" src="assets/images/danny-7.png" alt="Crab Image 1" width="100%" height="500px" style="object-fit: cover;">
+    
+    <!-- // MOBILE // -->
+    <img *ngIf="isMobile" class="mt-5" src="assets/images/danny-7.png" alt="Crab Image 7" width="100%">
 
-    <!-- ////// LOCATION ////// -->
+    <!-- /////////////////// LOCATION /////////////////// -->
+    
     <div class="my-5 mx-auto" style="width: 60%;">
         <p style="color: #20447d; font-size: 36px; text-align: center;">Location</p>
 
-        <!-- ////// DESKTOP ////// -->
+        <!-- // DESKTOP // -->
         <div *ngIf="!isMobile" class="d-flex justify-content-between">
             <div width="40%">
                 <p style="text-align: center; color: #20447d; font-size: 22px;">Baltimore</p>
@@ -36,7 +47,7 @@
             </div>
         </div>
 
-        <!-- ////// MOBILE ////// -->
+        <!-- // MOBILE // -->
         <div *ngIf="isMobile" class="mb-5">
             <div>
                 <p style="text-align: center; color: #20447d; font-size: 22px;">Baltimore</p>
@@ -53,7 +64,8 @@
         </div>
     </div>
 
-    <!-- ////// IMAGE-2 ////// -->
+    <!-- /////////////////// GOOGLE-MAP /////////////////// -->
+
     <img class="mb-5" src="assets/images/danny-map.png" alt="Map Image" width="100%">
 
 </div>

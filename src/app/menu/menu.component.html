@@ -1,29 +1,43 @@
 <div>
 
-    <img src="assets/images/danny-6.png" alt="Crab Image 6" width="100%">
+    <!-- /////////////////// IMAGE-1 /////////////////// -->
+    
+    <!-- // DESKTOP // -->
+    <img *ngIf="!isMobile" src="assets/images/danny-6-text.png" alt="Crab Image 6" width="100%" height="500px" style="object-fit: cover;">
 
-    <div class="m-5" style="border: 1px solid lightgray; border-radius: 8px; box-shadow: 10px 5px 5px lightgray;">
+    <!-- // MOBILE // -->
+    <img *ngIf="isMobile" src="assets/images/danny-6-text.png" alt="Crab Image 6" width="100%">
+
+    <!-- /////////////////// MENU /////////////////// -->
+    <div class="m-5 mx-auto" style="border: 1px solid lightgray; border-radius: 8px; box-shadow: 10px 5px 5px lightgray;" [ngStyle]="{'max-width': !isMobile ? '70vw' : '100%' }">
 
         <p-tabView>
+            <!-- // LUNCH // -->
             <p-tabPanel header="Lunch">
-                <div class="m-3" style="border: 1px solid lightgray; border-radius: 8px; width: 300px; height: 200px;">
-                    <p style="text-align: center; color: #20447d; font-size: 26px;">FISH TACOS</p>
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div *ngFor="let menuItem of lunchMenuItems">
+                        <app-menu-item [menuItem]="menuItem"></app-menu-item>
+                    </div>
                 </div>
             </p-tabPanel>
+            <!-- // DINNER // -->
             <p-tabPanel header="Dinner">
-                <div class="m-3" style="border: 1px solid lightgray; border-radius: 8px; width: 300px; height: 200px;">
-                    <p style="text-align: center; color: #20447d; font-size: 26px;">CRAB BUCKET</p>
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div *ngFor="let menuItem of dinnerMenuItems">
+                        <app-menu-item [menuItem]="menuItem"></app-menu-item>
+                    </div>
                 </div>
             </p-tabPanel>
+            <!-- // BEER & WINE // -->
             <p-tabPanel header="Beer & Wine">
-                <div class="m-3" style="border: 1px solid lightgray; border-radius: 8px; width: 300px; height: 200px;">
-                    <p style="text-align: center; color: #20447d; font-size: 26px;">SAMUEL ADAMS</p>
+                <div class="d-flex justify-content-between flex-wrap">
+                    <div *ngFor="let menuItem of drinkMenuItems">
+                        <app-menu-item [menuItem]="menuItem"></app-menu-item>
+                    </div>
                 </div>
             </p-tabPanel>
         </p-tabView>
 
-
- 
     </div>
 
 </div>

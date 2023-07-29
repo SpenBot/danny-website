@@ -1,12 +1,42 @@
 <div>
 
-    <img src="assets/images/danny-4.png" alt="Crab Image 4" width="100%">
+    <!-- /////////////////// IMAGE-1 /////////////////// -->
 
-    <div class="my-5">
-        <p-card header="About" [style]="{'width': '80%', 'margin': '0 auto'}">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
-                quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
-        </p-card>
+    <!-- // DESKTOP // -->
+    <img *ngIf="!isMobile" src="assets/images/danny-4-text.png" alt="Crab Image 4" width="100%" height="500px" style="object-fit: cover;">
+
+    <!-- // MOBILE // -->
+    <img *ngIf="isMobile" src="assets/images/danny-4-text.png" alt="Crab Image 4" width="100%">
+
+    <!-- /////////////////// ABOUT /////////////////// -->
+
+    <!-- // DESKTOP // -->
+    <div *ngIf="!isMobile" class="my-5 d-flex justify-content-center">
+        <div style="width: 60%;" class="d-flex justify-content-center">
+            <img src="assets/images/danny-9.png" alt="Crab Image 9" height="400px">
+            <div class="ml-4">
+                <p style="color: #20447d; font-size: 36px; text-align: center;">About Buckets Seafood and Raw Bar</p>
+                <p>BLU Crabhouse & Raw Bar is a family-owned restaurant located just a short walk from Ocean City's famous Boardwalk yet tucked on the bay overlooking spectacular sunsets.</p>
+                <p>BLU serves Eastern Shore favorites with a creative, unique flair -- steamed Maryland blue crabs, shrimp, clams, and crab cakes, as well as some new twists on the traditions using innovative ingredients and seasonings. The Raw Bar features a rotating oyster selection, a seafood tower, and much more.</p>
+                <p>In addition to the amazing seafood entrees, great steaks, burgers, chicken, and pasta selections make BLU the perfect destination for lovers of both the surf and the turf! The BLU bars offer exceptional specialty drinks as well as draft beers featuring local microbrews and an impressive selection of craft beer specials!</p>
+                <p>You can dine outside on the deck, in the sand under the palms, or at one of the indoor or outdoor bars. It's a fun, casual, delicious dining experience!</p>
+                <!-- <p class="mx-auto" [style]="'text-align: center; ' + (!isMobile ? 'width: 40%;' : 'width: 100%;')">You can dine outside on the deck, in the sand under the palms, or at one of the indoor or outdoor bars. It's a fun, casual, delicious dining experience!</p> -->
+            </div>
+        </div>
     </div>
 
+    <!-- // MOBILE // -->
+    <div *ngIf="isMobile" class="m-5 d-flex justify-content-center">
+        <div>
+            <img src="assets/images/danny-9.png" alt="Crab Image 9" height="400px">
+            <div class="mt-5">
+                <p style="color: #20447d; font-size: 36px; text-align: center;">About Buckets Seafood and Raw Bar</p>
+                <p>BLU Crabhouse & Raw Bar is a family-owned restaurant located just a short walk from Ocean City's famous Boardwalk yet tucked on the bay overlooking spectacular sunsets.</p>
+                <p>BLU serves Eastern Shore favorites with a creative, unique flair -- steamed Maryland blue crabs, shrimp, clams, and crab cakes, as well as some new twists on the traditions using innovative ingredients and seasonings. The Raw Bar features a rotating oyster selection, a seafood tower, and much more.</p>
+                <p>In addition to the amazing seafood entrees, great steaks, burgers, chicken, and pasta selections make BLU the perfect destination for lovers of both the surf and the turf! The BLU bars offer exceptional specialty drinks as well as draft beers featuring local microbrews and an impressive selection of craft beer specials!</p>
+                <p>You can dine outside on the deck, in the sand under the palms, or at one of the indoor or outdoor bars. It's a fun, casual, delicious dining experience!</p>
+                <!-- <p class="mx-auto" [style]="'text-align: center; ' + (!isMobile ? 'width: 40%;' : 'width: 100%;')">You can dine outside on the deck, in the sand under the palms, or at one of the indoor or outdoor bars. It's a fun, casual, delicious dining experience!</p> -->
+            </div>
+        </div>
+    </div>
 </div>

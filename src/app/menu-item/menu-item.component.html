@@ -1,0 +1,17 @@
+<div *ngIf="!isMobile" class="menuItem m-3 p-3" style="border: 1px solid lightgray; border-radius: 8px; width: 520px; min-height: 150px;">
+    <div class="d-flex">
+        <img *ngIf="menuItem.img" src="{{ menuItem.img }}" alt="{{ menuItem.label }}" height="80px">
+        <div class="ml-4">
+            <p style="color: #20447d; font-size: 26px;">{{ menuItem.label }}</p>
+            <p *ngIf="menuItem.desc">{{ menuItem.desc }}</p>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="isMobile" class="menuItem m-3 p-3" style="border: 1px solid lightgray; border-radius: 8px; width: 80vw; min-height: 90px;">
+    <div class="d-flex justify-content-center">
+        <img *ngIf="menuItem.img" src="{{ menuItem.img }}" alt="{{ menuItem.label }}" height="80px">
+    </div>
+    <p class="mt-2 mb-0" style="text-align: center; color: #20447d; font-size: 26px;">{{ menuItem.label }}</p>
+    <p class="mb-0" *ngIf="menuItem.desc" style="text-align: center;">{{ menuItem.desc }}</p>
+</div>
