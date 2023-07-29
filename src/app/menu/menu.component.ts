@@ -63,6 +63,21 @@ export class MenuComponent implements OnInit {
       img: null,
       desc: null
     },
+    {
+      label: 'Stella Artois',
+      img: null,
+      desc: null
+    },
+    {
+      label: 'Blue Moon',
+      img: null,
+      desc: null
+    },
+    {
+      label: 'Miller Light',
+      img: null,
+      desc: null
+    },
   ];
 
   constructor(private appService: AppService) { }
