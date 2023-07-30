@@ -68,24 +68,31 @@ https://www.blucrabhouse.com/menu#menu=dine-in-dinner
 ## MVP-1
 
 - [x] Graphic
-- [-] Google Maps
+
 - [x] Menu Items
 - [x] About Section
 
 - [x] images too big on desktop
 - [x] text on images
 
-- [-] router bug
+- [x] router bug
 - [x] have to clear cache everytime?
 
-- [-] menu items wrap is weird
+- [x] menu items wrap is weird for desktop
 
-- [-] favicon
+- [-] Google Maps
+
+- [-] Favicon
+- [-] Domain
+- [-] Graphic and Logos
+- [-] Photos
+- [-] Menu and Verbage
 
 ## MVP-2
 
 - [-] Image Carosels and Stuff
-- [-] Calander
+- [-] Calander (Events)
+- [-] Contact
 
 - I can put in fancier stuff like pop-windows, image-gallery type stuff, maybe like a calander or something.
 - I'm like 6 hours in for now
